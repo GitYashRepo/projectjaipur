@@ -4,7 +4,7 @@ A modern, accessible AI interface prototype built with Next.js, TypeScript, and 
 
 ## 🚀 Live Demo
 
-- **Live Application**: [Deploy this project to see it live]
+- **Live Application**: (https://projectjaipur-if7v.vercel.app/)
 - **Storybook Component Library**: Run `npm run storybook` to explore components
 - **GitHub Repository**: This codebase with full TypeScript source code
 
