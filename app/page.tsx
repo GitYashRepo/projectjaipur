@@ -524,7 +524,7 @@ export default function AIInterface() {
                     onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setInput(e.target.value)}
                     placeholder="Enter your prompt here... (Press Enter to send, Shift+Enter for new line)"
                     className="flex-1 min-h-[60px] resize-none transition-all duration-200 focus:scale-[1.01]"
-                    onKeyDown={(e: any) => {
+                    onKeyDown={(e: React.KeyboardEvent<HTMLTextAreaElement>) => {
                       if (e.key === "Enter" && !e.shiftKey) {
                         e.preventDefault()
                         handleSendMessage()
