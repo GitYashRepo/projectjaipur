@@ -30,16 +30,7 @@ import {
   Loader2,
 } from "lucide-react"
 import { useTheme } from "next-themes"
-
-type ToastMessage = { title?: string; description?: string }
-
-export function useToast() {
-  const toast = useCallback((message: ToastMessage) => {
-    console.log("Toast:", message)
-  }, [])
-
-  return { toast }
-}
+import { useToast } from "@/hooks/useToast"
 
 interface Message {
   id: string
