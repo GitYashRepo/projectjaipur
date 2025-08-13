@@ -336,7 +336,7 @@ export default function AIInterface() {
                     tabIndex={0}
                     role="button"
                     aria-label={`Load conversation: ${conversation.title}`}
-                    onKeyDown={(e: any) => {
+                    onKeyDown={(e: React.KeyboardEvent<HTMLDivElement>) => {
                       if (e.key === "Enter" || e.key === " ") {
                         e.preventDefault()
                         handleLoadConversation(conversation)
@@ -521,7 +521,7 @@ export default function AIInterface() {
                   <Textarea
                     ref={inputRef}
                     value={input}
-                    onChange={(e: any) => setInput(e.target.value)}
+                    onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setInput(e.target.value)}
                     placeholder="Enter your prompt here... (Press Enter to send, Shift+Enter for new line)"
                     className="flex-1 min-h-[60px] resize-none transition-all duration-200 focus:scale-[1.01]"
                     onKeyDown={(e: any) => {
